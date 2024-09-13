@@ -1,4 +1,4 @@
-# ZeroBase Documentation
+# ZeroBase Document
 
 ## Hub API
 
