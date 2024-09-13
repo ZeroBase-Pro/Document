@@ -1,8 +1,8 @@
-# ZeroBase Document
+# ZeroBase 
 
-## Hub API
-
-### Fetch Node List
+## API Document
+### Hub API 
+#### Fetch Node List
 - API : `https://api.example.com/api/v1/hub/node`
 - Method: `Get`
 - Payload
@@ -14,7 +14,7 @@
         - msg : `string` - Message
         - results : `Array` - List of nodes
 
-### Create Order
+#### Create Order
 - API : `https://api.example.com/api/v1/hub/token`
 - Method: `Post`
 - Payload
@@ -26,9 +26,9 @@
         - msg : `string` - Message
         - results : `string` - Order number
 
-## Node API
+### Node API
 
-### Proto
+#### Proto
     syntax = "proto3";  // Specify the proto version
 
     package prove_service;  // Specify the package name
@@ -60,7 +60,7 @@
         rpc ping(EmptyRequest) returns (EmptyResponse);  // Determine if this node is currently available
     }
 
-### Service Method Descriptions
+#### Service Method Descriptions
 
 - Prove
     - Function: `prove`
@@ -88,8 +88,8 @@
     - Request: `EmptyRequest`
     - Response: `EmptyResponse`
 
-### Current Supported Prover List
+#### Supported Prover
 - circom
 
-### Current Circuit Template List
-- ZkLogin
+#### Circuit Template 
+- zkLogin
